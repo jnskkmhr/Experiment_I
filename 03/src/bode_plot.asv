@@ -1,0 +1,16 @@
+[omega, gain, phase] = load_csv('../result/gain_phase.csv'); 
+
+
+subplot(1, 2, 1)
+scatter(omega, gain, color='blue'); 
+xlabel('\omega [rad/s]')
+ylabel('|G(j\omega)| [m/N]')
+set(gca, 'Xscale', 'log')
+
+subplot(1, 2, 2)
+scatter(omega, phase, color='red')
+xlabel('\omega [rad/s]')
+ylabel('Phase [m/N]')
+set(gca, 'Xscale', 'log')
+
+set(gcf, 'Position', pos + [0, -50, 0, 50]); 
