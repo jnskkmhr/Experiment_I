@@ -1,4 +1,4 @@
-data_path = ".\GroupC-3\problem3\free_vibration.csv"; 
+data_path = "../data/GroupC-3/problem3/free_vibration.csv"; 
 data = readmatrix(data_path); 
 data = data(:, [1 2 5 10]); 
 
